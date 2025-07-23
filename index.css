@@ -1,0 +1,296 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    /* height: 10000px; */
+}
+
+::selection {
+    background-color: grey;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* button css  */
+.button {
+    padding: 10px 20px;
+    background-color: #0079a1;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    transition: all .3s linear;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background-color: black;
+    z-index: -1;
+    transition: all .3s linear;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: white;
+    border-color: black;
+}
+
+.button:hover::after {
+    left: 0px;
+}
+
+/* button css end  */
+
+.heading {
+    position: relative;
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    background-color: initial;
+
+}
+
+/* scroll effect  */
+
+.scroll {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.4;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/* scroll effect end  */
+
+/* header css  */
+
+header * {
+    /* transition: all .2s linear; */
+}
+
+header {
+    height: fit-content;
+    max-height: 1000px;
+    background-color: #0079a1;
+    color: white;
+}
+
+header a {
+    color: white;
+}
+
+header .logoo {
+    border-right: 1px solid #dee2e6;
+}
+
+header .logoo img {
+    filter: invert(1);
+}
+
+header a.nav-link {
+    color: white;
+    padding: .5rem .7rem;
+}
+
+header .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #020278;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+header .top-nav p a {
+    padding: .5rem .7rem;
+    /* font-weight: 500; */
+    color: white;
+}
+
+header .top-nav p a:hover {
+    color: #020278;
+}
+
+header .fa-brands {
+    font-size: 25px;
+}
+
+header * {
+    transition: all .2s linear;
+}
+
+@media screen and (min-width:992px) {
+    header .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width:992px) {
+    header .logoo {
+        border-right: none;
+    }
+}
+
+/* slider section  */
+#slider.carousel img {
+    height: 600px;
+}
+
+#slider .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#slider .carousel-caption {
+    width: 100%;
+    right: 0;
+    left: 0;
+    background-color: #00000078;
+    text-align: start;
+}
+
+/* slider section end  */
+
+
+/* services section start  */
+#services {
+    position: relative;
+    background: url("images/service-bg.avif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#services::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffffed;
+    z-index: 0;
+}
+
+#services .box {
+    border: 1px solid #b4b4b4;
+    /* border-radius: 10px; */
+    background-color: white;
+}
+
+#services .service-box p {
+    text-align: justify;
+}
+
+/* services section end  */
+
+
+/* about section start */
+.content {
+    text-align: justify;
+}
+
+/* about section end */
+
+
+/* testiminail and contact section start */
+
+.testimonial-box:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('images/testiminial-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+}
+
+.dots .dot {
+    height: 10px;
+    width: 10px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50%;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.dots .dot.active {
+    background-color: white;
+}
+
+/* testiminail and contact section end */
+
+/* footer section start  */
+
+footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('images/footer-bg3.webp');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: 1;
+    filter: invert(1);
+}
+
+footer .about img {
+    filter: invert(1);
+}
+
+footer li {
+    padding: 7px 0px;
+}
+
+footer a {
+    color: white;
+    transition: all .2s linear;
+    /* transform: translateX(100px); */
+}
+
+footer a:hover {
+    color: rgb(97, 97, 97);
+    text-decoration: underline;
+    /* transform: translateX(10px); */
+}
+
+/* footer section end */
