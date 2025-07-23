@@ -114,6 +114,11 @@ header .logoo img {
     filter: invert(1);
 }
 
+.navbar-brand img{ 
+    height: 50px;
+    filter: invert(1);
+}
+
 header a.nav-link {
     color: white;
     padding: .5rem .7rem;
