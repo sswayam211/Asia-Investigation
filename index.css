@@ -90,11 +90,6 @@ li {
 /* scroll effect end  */
 
 /* header css  */
-
-header * {
-    /* transition: all .2s linear; */
-}
-
 header {
     height: fit-content;
     max-height: 1000px;
