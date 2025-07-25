@@ -1,5 +1,4 @@
 // header js 
-
 try {
     let topNav = document.querySelector('header .top-nav');
     let logo = document.querySelector('header .logoo');
