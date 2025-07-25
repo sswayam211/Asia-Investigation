@@ -3,6 +3,8 @@ body {
     font-weight: normal;
     font-style: normal;
     /* height: 10000px; */
+    line-height: 1.6;
+    color: black;
 }
 
 ::selection {
@@ -63,8 +65,38 @@ li {
 .heading::after {
     content: "";
     position: absolute;
-    background-color: initial;
+    height: 4px;
+    width: 100px;
+    background: black;
+    border-radius: 18px;
+    bottom: -5px;
+    left: 16px;
+}
 
+.heading::before {
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background: black;
+    border-radius: 50%;
+    bottom: -8.5px;
+    left: 0;
+}
+
+.about .heading::after {
+    background: white;
+}
+
+.about .heading::before {
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background: white;
+    border-radius: 50%;
+    bottom: -8.5px;
+    left: 0;
 }
 
 /* scroll effect  */
@@ -230,6 +262,7 @@ header * {
 .testimonial-box:after {
     content: "";
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     height: 100%;
