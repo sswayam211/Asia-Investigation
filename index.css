@@ -288,6 +288,28 @@ header * {
     background-color: white;
 }
 
+.testimonial-box {
+    transition: all .4s linear;
+}
+
+.fade {
+    animation: fade .4s ease forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 /* testiminail and contact section end */
 
 /* footer section start  */
