@@ -351,3 +351,22 @@ footer a:hover {
 }
 
 /* footer section end */
+
+
+
+/* contact section start  */
+.contact-details {
+    font-size: 20px;
+    line-height: 1.6;
+    color: black;
+    margin: 15px 0;
+    padding: 10px 10px;
+    border-bottom: 1px solid #959595;
+}
+
+.map-location{
+    height: 500px;
+    width: 100%;
+}
+
+/* contact section end */
