@@ -96,3 +96,68 @@ try {
 } catch (err) {
     console.log(err);
 }
+
+// service section
+try {
+    let serviceBoxes = document.querySelectorAll('.service-box');
+    let serviceBoxImgs = document.querySelectorAll('.service-box img');
+
+    let serviceBoxImgsArr = [{
+        img: 'images/CI.jpg',
+        hoverImg: 'images/CI-2.png'
+    },
+    {
+        img: 'images/Fraud.png',
+        hoverImg: 'images/fraud-2.png'
+    },
+    {
+        img: 'images/LS.jpg',
+        hoverImg: 'images/LS-2.png'
+    },
+    {
+        img: 'images/employee.jpg',
+        hoverImg: 'images/employee-2.png'
+    },
+    {
+        img: 'images/servalance.png',
+        hoverImg: 'images/servalance-2.png'
+    }];
+
+
+    serviceBoxes.forEach((box, index) => {
+        box.addEventListener('mouseover', () => {
+            // serviceBoxImgs[index].style.transform = 'scale(1.1)';
+            serviceBoxImgs[index].src = serviceBoxImgsArr[index].hoverImg;
+        });
+        box.addEventListener('mouseout', () => {
+            // serviceBoxImgs[index].style.transform = 'scale(1)';
+            serviceBoxImgs[index].src = serviceBoxImgsArr[index].img;
+        });
+    });
+
+} catch (err) {
+    console.log(err);
+}
+
+
+// clients slider bar 
+try {
+    let clientBar = document.querySelector('#clients .client-images');
+    let interval;
+
+    // clientBar.addEventListener('wheel', (e) => {
+    //     // e.preventDefault();
+    //     clientBar.scrollLeft += e.deltaY;
+    // });
+    function startScroll() {
+        clientBar.scrollLeft += 1;
+        if (clientBar.scrollLeft >= clientBar.scrollWidth - clientBar.clientWidth ) {
+            clientBar.scrollLeft = 0;
+        }
+    }
+
+    interval = setInterval(startScroll, 15);
+
+} catch (err) {
+    console.log(err);
+}
