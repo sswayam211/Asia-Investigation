@@ -10,7 +10,7 @@ I got the role of designing the website for this company, this is what i have de
 I have used Html, CSS, JS, and bootstrap for this design
 
 ## link
-https://sswayam211.github.io/Asia-Investigation/
+https://sswayam211.github.io/Asia-Investigation-Frontend/
 you can check the look of this design by this link
 
 
